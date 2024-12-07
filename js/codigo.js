@@ -2,6 +2,7 @@ let nombres = [];
 let continuar = true;
 let cantidad = 0;
 
+
 while (continuar) {
     let menu = Number(prompt(`Elija una de las siguientes opciones:
     1 - Cantidad de personas
@@ -27,7 +28,7 @@ while (continuar) {
             break;
         case 3:
             alert ("Cantidad "+cantidad) //Puse esto para validar si cantidad llega con un valor o no.
-            if (cantidad > 0) {
+            if (cantidad >= 0) {
                 calculoCubierto(cantidad);
             } else {
                 alert("Primero debe ingresar la cantidad de personas en la opción 1.");

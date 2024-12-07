@@ -31,6 +31,7 @@ while (continuar) {
             alert("El precio total es de: $"+total);
             break;
         case 4:
+            confirm ("Esta seguro que quiere salir?");
             continuar = false;
             break;
         default:

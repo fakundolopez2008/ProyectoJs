@@ -4,10 +4,10 @@ let cantidad;
 
 while (continuar) {
     let menu = Number(prompt(`Elija una de las siguientes opciones:
-1 - Cantidad de personas
-2 - Ver Nombres Cargados
-3 - Calcular valor de tenedor
-4 - Salir`));
+    1 - Cantidad de personas
+    2 - Ver Nombres Cargados
+    3 - Calcular valor de tenedor
+    4 - Salir`));
 
     switch (menu) {
         case 1:

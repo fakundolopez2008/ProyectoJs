@@ -26,7 +26,7 @@ while (continuar) {
             }
             break;
         case 3:
-            alert ("Cantidad "+cantidad)
+            alert ("Cantidad "+cantidad) //Puse esto para validar si cantidad llega con un valor o no.
             if (cantidad > 0) {
                 calculoCubierto(cantidad);
             } else {

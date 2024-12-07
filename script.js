@@ -1,5 +1,6 @@
 let nombres = [];
 let continuar = true;
+let cantidad;
 
 while (continuar) {
     let menu = Number(prompt(`Elija una de las siguientes opciones:
@@ -10,12 +11,11 @@ while (continuar) {
 
     switch (menu) {
         case 1:
-            let cantidad = Number(prompt("¿Cuántos son?"));
+            cantidad = Number(prompt("¿Cuántos son?"));
             for (let i = 0; i < cantidad; i++) {
                 nombres[i] = prompt("Ingrese un nombre");
             }
             break;
-
         case 2:
             if (nombres.length === 0) {
                 alert("No hay nombres cargados.");
@@ -25,17 +25,14 @@ while (continuar) {
                 }
             }
             break;
-
         case 3:
-            
-            alert("Funcionalidad en construcción.");
+            const precioCubierto = 2800;
+            let total = precioCubierto * cantidad;
+            alert("El precio total es de: $"+total);
             break;
-
         case 4:
             continuar = false;
-            alert("¡Gracias por usar el programa!");
             break;
-
         default:
             alert("Opción no válida. Intente nuevamente.");
             break;

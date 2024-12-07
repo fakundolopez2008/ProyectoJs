@@ -1,12 +1,12 @@
 let nombres = [];
 let continuar = true;
-let cantidad;
+let cantidad = 0;
 
 while (continuar) {
     let menu = Number(prompt(`Elija una de las siguientes opciones:
     1 - Cantidad de personas
     2 - Ver Nombres Cargados
-    3 - Calcular valor de tenedor
+    3 - Calcular Valor de tenedor
     4 - Salir`));
 
     switch (menu) {
@@ -26,9 +26,12 @@ while (continuar) {
             }
             break;
         case 3:
-            const precioCubierto = 2800;
-            let total = precioCubierto * cantidad;
-            alert("El precio total es de: $"+total);
+            alert ("Cantidad "+cantidad)
+            if (cantidad > 0) {
+                calculoCubierto(cantidad);
+            } else {
+                alert("Primero debe ingresar la cantidad de personas en la opción 1.");
+            }
             break;
         case 4:
             confirm ("Esta seguro que quiere salir?");
